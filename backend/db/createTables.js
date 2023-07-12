@@ -161,6 +161,30 @@ const createEmailLogsTable = async () => {
   });
 };
 
+const insertValuesIntoCategories = async () => {
+  const sql = ` INSERT INTO categories (name) VALUES
+      ('business'),
+      ('entertainment'),
+      ('environment'),
+      ('food'),
+      ('health'),
+      ('politics'),
+      ('science'),
+      ('sports'),
+      ('technology'),
+      ('top'),
+      ('tourism'),
+      ('world');
+      );`;
+  connection.query(sql, (err, result) => {
+    if (err) {
+      console.error(err);
+    } else {
+      console.log("Values inserted into categories!");
+    }
+  });
+};
+
 const databaseSetup = async () => {
   try {
     await createUsersTable();
@@ -171,6 +195,7 @@ const databaseSetup = async () => {
     await createPlansTable();
     await createSubscriptionsTable();
     await createEmailLogsTable();
+    await insertValuesIntoCategories();
     console.log("Tables Created Successfully");
   } catch (err) {
     console.log("Error creating database");
