@@ -1,0 +1,18 @@
+.news-page-div{
+    width: 100%;
+    min-height: 100%;
+    text-align: center !important;
+    padding: 5vh 10vw;
+}
+.news-page-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
+}
+h2{
+    text-align: center;
+}
+.search-bar{
+    margin-bottom: 20px;
+}

@@ -1,0 +1,29 @@
+.news-page-div{
+    width: 100%;
+    min-height: 100%;
+    text-align: center !important;
+    padding: 5vh 10vw;
+}
+.news-page-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
+}
+h2{
+    text-align: center;
+}
+.pagination-container{
+    margin-top: 40px;
+}
+.get-pdf-news-button-div{
+    padding: 0 20px;
+    display: flex;
+    justify-content: end;
+}
+.get-pdf-news-button{
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #fff;
+}

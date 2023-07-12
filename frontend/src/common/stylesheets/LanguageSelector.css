@@ -1,0 +1,15 @@
+.language-selector{
+    margin-top: 70px;
+    padding: 0 20px;
+    margin-bottom: 0;
+    width: 100% !important;
+    display: flex;
+    justify-content: space-between;
+}
+.temperature-div{
+    display: flex;
+    flex-direction: column;
+}
+.temperature-div p{
+    margin: 0;
+}
